@@ -1,0 +1,12 @@
+<h2>About</h2>  
+<div *ngIf="contactDetails">  
+  <h3>Contact Details:</h3>  
+  <div class="d-grid">
+  <p>Name: {{ contactDetails.name }}</p>  
+  <p>Address: {{ contactDetails.address }}</p>  
+  <p>Phone Number: {{ contactDetails.phoneNumber }}</p>
+</div>  
+</div>  
+<div *ngIf="!contactDetails">  
+  <p>No contact details available.</p>  
+</div>  
