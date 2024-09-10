@@ -13,3 +13,12 @@
 <p>- must be a form with fields name, address and phone number</p>
 <p>- on submitting form the details must be saved locally and shown in about page [can use localStorage]</p>
 <p><strong>Note:</strong> must use canDeactivate gaurd in contact page route, when user switches to different route without submitting the form then application must prevent navigation with an alert message</p>
+
+<h1>Random Post Titles</h1> 
+<ul>
+  @for (item of posts; track item.id) {
+    <li>{{item.id}} - {{item.title}}</li>
+  } @empty {
+    <li>There are no items</li>
+  }
+</ul>
