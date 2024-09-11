@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { CalculatorService } from '../_services/calculator.service';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-calculator',
   standalone: true,
-  imports: [],
+  imports: [FormsModule],
   templateUrl: './calculator.component.html',
   styleUrl: './calculator.component.scss'
 })
