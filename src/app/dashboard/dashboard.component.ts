@@ -1,10 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { CalculatorComponent } from "../calculator/calculator.component";
+import { MyLibComponent } from '../../../projects/my-lib/src/public-api';
 
 @Component({
   selector: 'app-dashboard',
   standalone: true,
-  imports: [CalculatorComponent],
+  imports: [CalculatorComponent, MyLibComponent],
   templateUrl: './dashboard.component.html',
   styleUrl: './dashboard.component.scss'
 })
