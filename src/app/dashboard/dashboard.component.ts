@@ -1,9 +1,10 @@
 import { Component, OnInit } from '@angular/core';
+import { CalculatorComponent } from "../calculator/calculator.component";
 
 @Component({
   selector: 'app-dashboard',
   standalone: true,
-  imports: [],
+  imports: [CalculatorComponent],
   templateUrl: './dashboard.component.html',
   styleUrl: './dashboard.component.scss'
 })

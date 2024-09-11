@@ -1,0 +1,15 @@
+<div class="calculator">
+  <h2>Simple Calculator</h2>
+  <input type="number" id="num1" placeholder="Enter first number">
+  <input type="number" id="num2" placeholder="Enter second number">
+
+
+  <div class="buttons">
+    <button (click)="add()">Add</button>
+    <button (click)="subtract()">Substract</button>
+    <button (click)="multiply()">Multiply</button>
+    <button (click)="divide()">Divide</button>
+  </div>
+
+  <h3>Result: {{ result }}</h3>
+</div>
